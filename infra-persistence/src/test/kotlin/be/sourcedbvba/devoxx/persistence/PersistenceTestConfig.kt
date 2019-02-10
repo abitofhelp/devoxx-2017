@@ -8,7 +8,7 @@ const val TEST_DATABASE_NAME = "devoxxtest"
 
 class PersistenceTestConfig : PersistenceConfig() {
     @Bean
-    fun mongoTemplate() : MongoTemplate {
+    fun mongoTemplate(): MongoTemplate {
         return MongoTemplate(Fongo(getDatabaseName()).mongo, getDatabaseName())
     }
 

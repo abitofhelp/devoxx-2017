@@ -37,7 +37,7 @@ subprojects {
     targetCompatibility = 1.9
 
     configurations {
-        testOutput.extendsFrom (testCompile)
+        testOutput.extendsFrom(testCompile)
     }
 
     repositories {
@@ -55,9 +55,9 @@ subprojects {
         }
     }
 
-    task jarTest (type: Jar, dependsOn: testClasses) {
-        from sourceSets.main.output,sourceSets.test.output
-        archiveClassifier  = 'test'
+    task jarTest(type: Jar, dependsOn: testClasses) {
+        from sourceSets.main.output, sourceSets.test.output
+        archiveClassifier = 'test'
     }
 
     artifacts {
@@ -65,7 +65,7 @@ subprojects {
     }
 
     dependencies {
-        
+
         compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
         compile "org.jetbrains.kotlin:kotlin-reflect"
         compile "com.fasterxml.jackson.module:jackson-module-kotlin:2.9.8"
