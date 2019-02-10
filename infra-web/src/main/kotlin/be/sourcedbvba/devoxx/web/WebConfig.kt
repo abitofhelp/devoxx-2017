@@ -1,6 +1,6 @@
 package be.sourcedbvba.devoxx.web
 
-import com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceExporter
+import com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceImplExporter
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration
@@ -9,5 +9,5 @@ import org.springframework.context.annotation.Configuration
 @ComponentScan
 class WebConfig {
     @Bean
-    fun autoJsonRpcExporter() = AutoJsonRpcServiceExporter()
+    fun autoJsonRpcExporter() = AutoJsonRpcServiceImplExporter()
 }

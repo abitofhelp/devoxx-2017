@@ -8,11 +8,11 @@ import org.junit.Test
 import org.mockito.Mockito.doReturn
 import org.mockito.Mockito.mock
 
-internal class ProductRpcServiceTest() {
-    val findProducts = mock(FindProducts::class.java)
-    val createProduct = mock(CreateProduct::class.java)
+internal class ProductRpcServiceTest {
+    private val findProducts: FindProducts = mock(FindProducts::class.java)
+    private val createProduct: CreateProduct = mock(CreateProduct::class.java)
 
-    val productController = ProductRpcServiceImpl(findProducts, createProduct)
+    private val productController = ProductRpcServiceImpl(findProducts, createProduct)
 
     @Test
     fun findProducts() {

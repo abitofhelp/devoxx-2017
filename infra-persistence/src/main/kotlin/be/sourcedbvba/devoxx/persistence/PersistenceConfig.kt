@@ -7,5 +7,4 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @Configuration
 @ComponentScan
 @EnableMongoRepositories
-class PersistenceConfig {
-}
+class PersistenceConfig

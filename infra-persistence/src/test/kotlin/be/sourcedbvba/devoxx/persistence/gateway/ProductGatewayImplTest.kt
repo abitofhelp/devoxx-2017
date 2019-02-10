@@ -14,7 +14,7 @@ import org.springframework.test.context.ContextConfiguration
 import org.springframework.test.context.junit.jupiter.SpringExtension
 
 @ExtendWith(SpringExtension::class)
-@ContextConfiguration(classes = arrayOf(PersistenceTestConfig::class))
+@ContextConfiguration(classes = [PersistenceTestConfig::class])
 internal class ProductGatewayImplTest {
     @Autowired
     lateinit var productGateway: ProductGateway
@@ -23,7 +23,7 @@ internal class ProductGatewayImplTest {
 
     @BeforeEach
     fun clearMongo() {
-        productRepository.deleteAll();
+        productRepository.deleteAll()
     }
 
     @Test

@@ -6,6 +6,5 @@ import org.springframework.test.context.ContextConfiguration
 import org.springframework.test.context.junit.jupiter.SpringExtension
 
 @ExtendWith(SpringExtension::class)
-@ContextConfiguration(classes = arrayOf(PersistenceTestConfig::class, UseCaseConfig::class))
-abstract internal class UseCaseTest() {
-}
+@ContextConfiguration(classes = [PersistenceTestConfig::class, UseCaseConfig::class])
+internal abstract class UseCaseTest

@@ -13,6 +13,6 @@ class PersistenceTestConfig : PersistenceConfig() {
     }
 
     fun getDatabaseName(): String {
-        return TEST_DATABASE_NAME;
+        return TEST_DATABASE_NAME
     }
 }

@@ -19,5 +19,5 @@ class ProductGatewayImpl(private val productRepository: ProductRepository? = nul
 }
 
 fun Product.toNewDocument(): ProductDocument {
-    return ProductDocument(null, id, name);
+    return ProductDocument(null, id, name)
 }

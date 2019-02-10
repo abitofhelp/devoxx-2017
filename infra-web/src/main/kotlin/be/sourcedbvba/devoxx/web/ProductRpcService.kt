@@ -21,7 +21,7 @@ interface ProductRpcService {
 class ProductRpcServiceImpl(val findProducts: FindProducts,
                             val createProduct: CreateProduct) : ProductRpcService {
     override fun createProduct(name: String): String {
-        return createProduct.create(CreateProduct.Request(name)).id;
+        return createProduct.create(CreateProduct.Request(name)).id
     }
 
     @GetMapping

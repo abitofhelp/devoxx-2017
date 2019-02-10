@@ -10,6 +10,4 @@ import org.springframework.context.annotation.Import
 @Import(WebConfig::class,
         PersistenceConfig::class,
         UseCaseConfig::class)
-class Wiring {
-
-}
+class Wiring
